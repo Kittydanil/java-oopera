@@ -9,8 +9,8 @@ public class Theatre {
         Actor actorDanil = new Actor("Данил", "Иваньков", 182.5, Gender.MALE);
         Director directorLubov = new Director("Любовь", "Зоя", 154.0, Gender.FEMALE, 30);
         Director directorNikolay = new Director("Николай", "Зоя", 176.5, Gender.MALE, 28);
-        MusicAuthor authorAnton = new MusicAuthor("Антон", "Иваньков", 187.5, Gender.MALE);
-        Choreographer choreographerVladislav = new Choreographer("Владислав", "Иваньков",
+        Person authorAnton = new Person("Антон", "Иваньков", 187.5, Gender.MALE);
+        Person choreographerVladislav = new Person("Владислав", "Иваньков",
                 170.0, Gender.MALE);
 
         Show show = new Show("Вождь краснокожих", 115, directorLubov);

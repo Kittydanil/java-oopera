@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Show {
 
-    String title;
-    int duration;
-    Director director;
+    public String title;
+    public int duration;
+    protected Director director;
     public ArrayList<Actor> listOfActors = new ArrayList<>();
 
     public Show(String title, int duration, Director director) {
@@ -35,18 +35,18 @@ public class Show {
         System.out.println("Актёр успешно добавлен в список!");
     }
 
-    public void replaceActor(Actor actor, String surname) {
-        Person person = null;
-        for (Actor actors : listOfActors) {
-            if (actors.surname.equals(surname)) {
-                person = actors;
+    public void replaceActor(Actor actors, String surname) {
+        Actor person = null;
+        for (Actor actor : listOfActors) {
+            if (actor.surname.equals(surname)) {
+                person = actor;
             }
         }
         if (person == null) {
             System.out.println("Такого актёра нет в списке!");
         } else {
             listOfActors.remove(person);
-            listOfActors.add(actor);
+            listOfActors.add(actors);
             System.out.println("Актёр успешно заменён!");
         }
     }
